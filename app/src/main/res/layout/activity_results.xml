@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context="hackforgood2017.mamapp.activities.ResultsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_results"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_explore_only"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="Resultados"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="Baja"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Baja - Tu probabilidad es baja, pero recuerda mantener un control y acudir al médico si lo crees necesario."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Media - Nuestros indicadores recomiendan que acudas a tu médico debido a tus resultados. Recuerda que el 90% de los tumores son benignos"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Alta - Tras los resultados obtenidos, deberías acudir al médico. Detectar precozmente la enfermedad salva muchas vidas. Recuerda que el 90% de los tumores son benignos."/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

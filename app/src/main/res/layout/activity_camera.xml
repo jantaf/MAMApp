@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:camerakit="http://schemas.android.com/apk/res-auto">
+
+    <com.flurgle.camerakit.CameraView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        camerakit:ckFocus="continuous"
+        camerakit:ckJpegQuality="50"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btn_photo"/>
+</RelativeLayout>

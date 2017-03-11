@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MainActivity"
+    android:weightSum="1"
+    android:layout_marginBottom="5dp">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/myRecycler"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:clipToPadding="false">
+    </android.support.v7.widget.RecyclerView>
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnCircular"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cpb_textComplete="Enviado"
+        app:cpb_textIdle="Siguiente"
+        android:layout_weight="0.2"/>
+
+</LinearLayout>
